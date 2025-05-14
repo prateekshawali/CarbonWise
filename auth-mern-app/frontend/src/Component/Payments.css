@@ -1,0 +1,129 @@
+/* General Styling */
+body {
+    /* background-color: #f4f4f4; */
+    
+    line-height: 1.6;
+     /* Prevent overlap with navbar */
+  }
+  
+  .payments-container {
+    color: #333;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(181, 243, 145);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkhead {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .billing-and-payment {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .payments-form {
+    flex: 1 1 60%; /* Take up 60% of the width */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    
+  }
+  
+  .payments-form h2 {
+    grid-column: span 2;
+    text-align: center;
+    color: #333;
+  }
+  
+  .payments-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .payments-form input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .payment-section {
+    flex: 1 1 35%; /* Take up 35% of the width */
+    background-color: #fdfdfd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-section h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .payment-methods label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .payment-methods input {
+    margin-right: 10px;
+  }
+  
+  .payment-methods img {
+    width: 24px;
+    margin-left: 8px;
+  }
+  
+  .credit-card-inputs,
+  .upi-input {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .credit-card-inputs input,
+  .upi-input input {
+    margin: 5px 0;
+  }
+  
+  .submit-button {
+    width:auto;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 300px;
+  }
+  
+  .submit-button:hover {
+    background-color: #218838;
+  }
+  
+  .submit-button:active {
+    background-color: #1e7e34;
+  }
+  
+  @media (max-width: 768px) {
+    .billing-and-payment {
+      flex-direction: column;
+    }
+  }
+  .payment-methods label img {
+    width: 24px;
+    margin-left: 8px;
+    
+  }

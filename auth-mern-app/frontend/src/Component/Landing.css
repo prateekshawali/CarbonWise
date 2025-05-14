@@ -1,0 +1,84 @@
+body, html {
+           
+            height: 100%;
+            background-color: #0f0f0f;
+            scroll-behavior: smooth;
+            overflow: auto; /* Ensure scrolling is allowed */
+            font-family: 'Arial', sans-serif;
+            color: aliceblue;
+        }
+        .content{
+            position: relative;
+            top:150px;
+            right: 300px;
+        }
+        .heading{
+            font-size: 50px;
+            color: #f8f8f8;
+            margin-left:500px;
+        }
+        .smoke-container {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .subtitle{
+            font-size: 30px;
+            margin-left:300px;
+            font-weight: 400;
+        }
+        .smoke {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background-color: rgba(93, 214, 44, 0.25); /* Increased opacity */
+            border-radius: 50%;
+            filter: blur(70px);
+            animation: smoke-flow 15s infinite alternate;
+        }
+        .smoke1 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: rgba(93, 214, 44, 0.25); /* Increased opacity */
+            border-radius: 50%;
+            filter: blur(70px);
+            animation: smoke-flow 15s infinite alternate;
+        }
+
+        @keyframes smoke-flow {
+            0% {
+                transform: translate(0, 0) rotate(0deg) scale(1);
+                opacity: 0.55;
+            }
+            50% {
+                transform: translate(100px, -150px) rotate(180deg) scale(1.2);
+                opacity: 0.85;
+            }
+            100% {
+                transform: translate(-100px, 150px) rotate(360deg) scale(0.9);
+                opacity: 1;
+            }
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #5dd62c;
+            color: #0f0f0f;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            box-shadow: 1px 4px 10px #0f0f0f;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #337418;
+            
+        }
+        

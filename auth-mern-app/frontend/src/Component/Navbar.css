@@ -1,0 +1,220 @@
+/* Navbar Base Styles */
+/* :root{
+  --
+} */
+ body{
+  font-family: Arial, Helvetica, sans-serif;
+ }
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  background-color: #0f0f0f;
+}
+
+.navbar.scrolled {
+  background-color: #0f0f0f;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* Logo Section */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #5dd62c;
+}
+
+.logo-icon {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.navbar.scrolled .logo-icon {
+  transform: rotate(20deg);
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  color: inherit;
+}
+
+/* Navigation Links */
+.navbar-links {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 500;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar.scrolled .navbar-links li a {
+  color: #a3d68f;
+}
+
+.navbar-links li a:hover {
+  color: #5dd62c;
+  transform: scale(1.05);
+}
+
+/* Action Buttons */
+.navbar-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+ 
+}
+.marg{
+  margin-right: 100px;
+}
+
+.button.outline {
+  color: #5dd62c;
+  border: 2px solid #5dd62c;
+  background: transparent;
+}
+
+.outline{
+  color: #5dd62c;
+}
+
+.button.outline:hover {
+  background: #e6fffa;
+}
+
+.button.primary {
+  color: #0f0f0f;
+  background: #5dd62c;
+  border: 2px solid #5dd62c;
+}
+
+.button.primary:hover {
+  background: #5dd62c;
+  box-shadow: 0 4px 10px rgba(125, 171, 146, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none; /* Hide links on smaller screens */
+  }
+
+  .navbar-actions {
+    gap: 0.5rem;
+  }
+}
+.profile-card {
+  position: absolute;
+  top: 60px; /* Adjust based on your Navbar height */
+  right: 20px; /* Position it near the profile button */
+  background: #0f0f0f;
+  border: 1px solid #5dd62c;
+  box-shadow: 0 4px 8px #5dd62c;
+  padding: 16px;
+  border-radius: 8px;
+  z-index: 1000;
+  width: 300px;
+  margin-right: 100px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-card h3 {
+  margin: 10px 0 8px;
+  font-size: 18px;
+}
+
+.profile-card p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.close-button{
+  position: absolute;
+  right: 20px;
+  background-color: transparent;
+  color: #e6fffa;
+  border: none;
+}
+
+
+.containerr{
+  background-color: #202020;
+  padding: 5px 10px 10px 10px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.cardlog{
+  margin-left: 85px;
+}
+
+
+.prof{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #0f0f0f;
+  border: 2px solid #5dd62c;
+  
+}
+.greet{
+  text-align: center;
+}
+
+.head{
+width: 0.8rem;
+height: 0.8rem;
+border-radius: 50%;
+background-color: #5dd62c;
+margin-left: 17px;
+margin-top: 2px;
+}
+.body{
+  width: 1.6rem;
+  height: 0.6rem;
+  margin-left: 10px;
+  margin-top: 2px;
+  margin-bottom: 3px;
+  background-color: #5dd62c;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+}
+
+.dets{
+  display: flex;
+  flex-direction: column;
+}

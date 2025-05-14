@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #front {
+    background: #202020;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  #front h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  #front img {
+    max-width: 300px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  
+  #front p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 1.2em;
+  }
+  
+  #first {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 5%;
+    background: transparent;
+  }
+  
+  #first img {
+    max-width: 45%;
+    height: auto;
+  }
+  
+  #first div {
+    flex: 1;
+  }
+  
+  #first h1 {
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  #first p {
+    color: white;
+    line-height: 1.6;
+  }
+  
+  #fourth {
+    height: auto;
+    width: 100%;
+    padding: 4% 0%;
+    /* background: rgba(3, 91, 255, 0.822); */
+    background: rgba(24, 26, 24, 0.897);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  #fourth h2,
+  h1 {
+    text-align: center;
+    padding: 2% 20%;
+  }
+  
+  #fourth_cards {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1% 5%;
+  }
+  
+  #fourth_cards div {
+    margin: 0% 1%;
+    padding: 5% 5%;
+    color: white;
+    box-shadow: 0px 0px 10px 0px rgba(2, 101, 167, 0.801);
+    background: linear-gradient(
+      45deg,
+      rgba(215, 247, 193, 0.74),
+      rgb(80, 165, 0) 30%
+    );
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+  
+  #fourth_cards div p {
+    padding-top: 20px;
+    font-weight: bolder;
+  }
+  
+  #fourth_cards div:hover {
+    background: linear-gradient(
+      40deg,
+      rgb(43, 226, 6) 80%,
+      rgba(40, 228, 33, 0.74) 80%
+    );
+    border-bottom-right-radius: 10%;
+    border-left: 2px rgb(255, 255, 255) solid;
+    border-bottom: 2px rgb(255, 255, 255) solid;
+    color: #202020;
+  }
+  #second img{
+    width: 350px;
+    height: 300px;
+  }
+  #second {
+    width: 90%;
+    height: auto;
+    padding: 0px 5%;
+    padding-top: 7%;
+    margin-left: 100px;
+    background: transparent;
+    transition: 1s all;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    background-color: transparent;
+  }
+  
+  .container div {
+    flex: 1;
+  }
+  
+  .container img {
+    max-width: 40%;
+    height: auto;
+  }
+  
+  .container h1 {
+    color: #f8f8f8;
+    margin-bottom: 10px;
+  }
+  
+  .container h2 {
+    color: #f8f8f8;
+    margin-bottom: 20px;
+  }
+  
+  .container p {
+    line-height: 1.6;
+  }
+  
+  #fifth {
+    background: rgb(48, 219, 5);
+    padding: 50px 20px;
+    color: #f8f8f8;
+  }
+  
+  #fifth h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #fifth > div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  #fifth a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #fifth a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  #fifth img {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+  }
+  
+  #foote {
+    background: rgb(19, 20, 19);
+    padding: 40px 5%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+  
+  #foote ul {
+    list-style: none;
+  }
+  
+  #foote li {
+    margin-bottom: 15px;
+  }
+  
+  #foote a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  #foote a:hover {
+    color: #5dd62c;
+  }
+  
+  .phone-link {
+    display: block;
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .copyright {
+    background: rgb(27, 27, 27);
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  /* Reveal Animation */
+  .reveal {
+    opacity: 1;
+    transform: translateY(30px);
+    transition: all 1s ease;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #first, .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    #first img, .container img {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  
+    #fourth_cards {
+      grid-template-columns: 1fr;
+    }
+  
+    #fifth > div {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    
+  }
+  #foote {
+    display: flex;
+    justify-content: space-around;
+    background:  rgb(19, 20, 19);
+    padding: 0px 50px;
+    padding-top: 20px;
+    overflow-y: hidden;
+
+  }
+  #foote ul {
+    height: auto;
+    width: 100%;
+    padding-left: 5%;
+    list-style: none;
+  }
+  
+  #foote ul li {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 110%;
+    padding: 5% 2%;
+    text-decoration: none;
+  }
+  
+  #foote ul li a:before {
+    content: "";
+    width: 0%;
+    margin-top: 25px;
+    height: 2px;
+    z-index: 1;
+    position: absolute;
+    background: rgb(255, 127, 127);
+    transition: all 0.2s ease-in;
+  }
+  
+  /* #foote li a:hover:before {
+    color: white;
+    text-decoration: none;
+  } */
+  
+  li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+
+    color: #5dd62c;
+    text-decoration: none;
+  }
+  
+  #foote div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  #foote div h2 {
+    padding: 5%;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  
+  #foote div span a {
+    padding: 10px 10px;
+    transition: all 2s;
+  }
+  
+  #foote div span a img {
+    padding: 0.5%;
+    height: 80%;
+    width: 10%;
+  }
+  
+  #foote div span a :hover {
+    transform: rotate(10deg);
+  }
+  
+  .reveal {
+    transform: translateY(150px);
+    opacity: 1;
+    transition: all 2s ease;
+  }
+  
+  .reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+.paratxt{
+    color: aliceblue;
+}
+
+  .descriptionnn{
+    font-size: 25px;
+  }
+  .mainhead{
+    font-size: 40px;
+  }
+  .subhead{
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+.textpart{
+    width: 80%;
+}

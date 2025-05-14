@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --light: #1ee048;
+  --dark: #05860c;
+  --green: #21ce46;
+  --carbon-dark: #1a1b1d; /* Carbon theme dark */
+  --carbon-light: #c0c1c3; /* Carbon theme light */
+}
+
+body {
+  font-family: Poppins;
+  background: var(--carbon-dark);
+  line-height: 26px;
+  margin: 0;
+  
+}
+
+h1 {
+  color: var(--green);
+}
+
+.ContactApp {
+  height: 75vh;
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+form {
+  width: 100%; 
+  max-width: 800px;
+  background: var(--carbon-dark);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  margin-right: 200px;
+  
+  
+}
+
+.formRow {
+  margin: 10px 0 20px 0;
+}
+
+.formInput {
+  width: 100%;
+  padding: 5px 5px;
+  background-color: var(--carbon-dark);
+  border: 2px solid var(--green);
+  box-shadow: 0 0 0 2px var(--green);
+  color: var(--green);
+  border-radius: 8px;
+}
+
+.formInput:focus {
+  background-color: var(--carbon-dark);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--green);
+  color: var(--light);
+}
+
+.formInput::placeholder {
+  color: var(--green);
+  opacity: 1;
+}
+
+.formInput:focus::placeholder {
+  color: var(--light);
+  opacity: 1;
+}
+
+.errorMessage {
+  color: #f45532;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+#notifyToast {
+  color: #fff;
+  border-radius: 6px;
+  width: 200px;
+  margin-left: 75px;
+  background-color: var(--green);
+}
+
+.submit-btn {
+  background-color: var(--carbon-dark);
+  color: var(--green) !important;
+  padding: 15px 50px;
+  border: 2px solid var(--green);
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.submit-btn:hover {
+  background-color: var(--green);
+  color: var(--carbon-dark) !important;
+  border: 2px solid var(--green);
+}
+
+.submit-btn:disabled:hover {
+  background-color: var(--carbon-dark);
+  color: var(--green) !important;
+  cursor: wait;
+}
+
+@media (max-width: 768px) {
+  .submit-message {
+    width: 12px;
+    margin-left: 200px;
+  }
+}
