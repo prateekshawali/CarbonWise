@@ -1,7 +1,19 @@
 {
+  "name": "your-app-name",
+  "version": "1.0.0",
+  "homepage": "https://prateekshawali.github.io/carbon-wise",
   "dependencies": {
     "emailjs-com": "^3.2.0",
     "react-hook-form": "^7.54.1",
-      "homepage": "https://prateekshawali.github.io/carbon-wise"
+    "react-scripts": "^5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }

@@ -1,4 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
+import React, { useEffect } from 'react';
+
 
 import "./App.css";
 import Login from "./pages/Login";
@@ -9,9 +11,17 @@ import LearnInfo from "./Component/LearnInfo";
 import Offsets from "./Component/Offsets";
 import Payments from "./Component/Payments";
 import Proj from "./pages/Proj";
+   
 // import ProtectedRoute from "./pages/ProtectedRouter"; // Import the ProtectedRoute component
+
 function App() {
+ 
+
   return (
+  
+
+
+
     <div className="App">
       <Routes>
         <Route path="/" element={<Navigate to="/login" />} />
@@ -30,6 +40,7 @@ function App() {
           />
       </Routes>
     </div>
+    
   );
 }
 

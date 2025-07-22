@@ -5,12 +5,12 @@ body {
     
     background-color: black;
   }
-  
+
 
   
   /* Hero Section */
   .bg-image-section {
-    background-image: url('C:\Users\prati\Desktop\CarbonWise\auth-mern-app\frontend\public\images\images\background.jpeg');
+    background-image: url('C:\Users\prati\Desktop\MyProjects\CarbonWise\auth-mern-app\frontend\public\images\images\background.jpeg');
     background-size: cover;
     background-position: center;
     color: #ffffff;

@@ -18,15 +18,8 @@ function Login() {
     try {
       const response = await axios.post('http://localhost:8080/auth/login', { email, password });
       if (response.data.success) {
-        // Store the JWT token in localStorage
-        // localStorage.setItem("jwtToken", response.data.jwtToken);
-        // localStorage.setItem("userName", response.data.name);
-        // localStorage.setItem("userEmail", response.data.email);
-        
-        // console.log("JWT Token:", response.data.jwtToken);
-        // navigate("/home");
-        // window.location.reload();
-        const { name, email, jwtToken } = response.data; // Make sure the API returns these properties
+       
+        const { name, email, jwtToken } = response.data; 
       localStorage.setItem("jwtToken", jwtToken);
       localStorage.setItem("userName", name);
       localStorage.setItem("userEmail", email);

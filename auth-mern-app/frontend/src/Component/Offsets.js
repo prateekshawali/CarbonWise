@@ -1,81 +1,51 @@
 import React from "react";
+import "./Offsets.css"; // Custom styling file you'll create
 
 const Offsets = () => {
   return (
-    <div className="app-container-fluid">
-      <div className="hero-section">
-        <h1>Rising Carbon Footprint = Rising Temperatures</h1>
-        <p className="hero-description">
-          We’ve seen a radical spike in our carbon emissions since the
-          Industrial Revolution, with today’s numbers at an all-time high.
-          Carbon is warming the planet to unsustainable levels and temperatures
-          will only keep rising unless we reduce our carbon footprint.
+    <div className="offsets-container">
+      <section className="hero">
+        <h1>🌍 Reduce Your Carbon Footprint, Save the Future</h1>
+        <p>
+          Carbon emissions are heating our planet faster than ever before.
+          Whether you're a student, a commuter, or a CEO—every step counts. Let’s understand how and why!
         </p>
-      </div>
+      </section>
 
-      <div class="row">
-        <div class="col-sm-4 mb-5 mb-sm-0">
-          <div class="card fixed-card pb-4">
-            <div class="card-body">
-              <h5 class="card-title pb-2">We All Emit Carbon</h5>
-              <p class="card-text pt-1 pb-4">
-                Our lifestyle and economic status impact the carbon emissions we
-                release. But it’s more than just big things like flying or
-                driving—it’s also the little things we do every day.Small steps
-                help, but they are not enough.here’s more to be done. The
-                average annual energy-related carbon footprint of an American
-                student living in the USA is about 5.9 metric tons of carbon
-                dioxide (tCO2e)according to the latest information from the U.S.
-                Department of Energy.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 cardies">
-          <div class="card fixed-card">
-            <div class="card-body">
-              <img
-                src="images/images/Student_data.png"
-                class="card-img-top"
-                alt="..."
-              />
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 py-0">
-          <div class="card fixed-card  ">
-            <div class="card-body ">
-              <img src="images/images/one.png" class="card-img-top" alt="..."></img>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card fixed-card">
-            <div class="card-body">
-              <img
-                src="images/images/commute.png"
-                class="card-img-top"
-                alt="..."
-              ></img>
-            </div>
-          </div>
+      <section className="card-grid">
+        <div className="card fade-in">
+          <img src="/images/earth_heat.png" alt="Student Data" />
+          <h3>Students Emit Too</h3>
+          <p>
+            Even students have an average footprint of 5.9 metric tons/year! From digital usage to food habits,
+            everything adds up.
+          </p>
         </div>
 
-        <div class="col-sm-4">
-          <div class="card fixed-card">
-            <div class="card-body">
-              <img src="images/images/CEO.png" class="card-img-top" alt="..."></img>
-            </div>
-          </div>
+        <div className="card fade-in delay-1">
+          <img src="/images/commute.jpg" alt="Commute" />
+          <h3>Commute Emissions</h3>
+          <p>
+            Driving to work or college daily? Transportation is one of the biggest emission sources—consider walking, cycling, or carpooling.
+          </p>
         </div>
-        <div class="col-sm-4">
-          <div class="card fixed-card">
-            <div class="card-body">
-              <img src="images/images/Flyer.png" class="card-img-top" alt="..."></img>
-            </div>
-          </div>
+
+        <div className="card fade-in delay-2">
+          <img src="/images/CEO.png" alt="CEO Lifestyle" />
+          <h3>High-Impact Lifestyles</h3>
+          <p>
+            CEOs and high-income individuals have a carbon footprint up to 100x higher! Influence can be used to reduce that.
+          </p>
         </div>
-      </div>
+
+        <div className="card fade-in delay-3">
+          <img src="/images/Flyer.jpg" alt="Frequent Flyer" />
+          <h3>Frequent Flyers</h3>
+          <p>
+            One long-haul flight emits as much CO2 as a year of driving. Sustainable travel choices matter.
+          </p>
+        </div>
+      </section>
     </div>
   );
 };
